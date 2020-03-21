@@ -1,0 +1,80 @@
+:root {
+    --colorPrimary: #f91944;
+}
+
+  .foodCorner{
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+/* Food Menu */
+.foodMenu{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.foodMenu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+}
+.foodMenu ul li{
+    padding: 10px 15px;
+}
+
+.foodMenu ul li a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: all .3s ease;
+}
+.foodMenu ul li a.active,
+.foodMenu ul li a:hover{
+    color: var(--colorPrimary);
+}
+.foodMenu ul li a.active::before,
+.foodMenu ul li a:hover::before{
+    content: "";
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+    background-color: var(--colorPrimary);
+}
+
+/* Food items */
+.foodItems{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
+.foodItem{
+    text-align: center;
+    padding: 40px 10px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.foodItem:hover{
+    box-shadow: 0 5px 15px 3px #eee;
+}
+
+.foodItem img{
+    width: 70%;
+}
+.foodItem .foodTitle{
+    font-size: 18px;
+    margin: 15px 0;
+}
+.foodItem .foodShortDisc{
+    color: #555;
+    margin: 15px 0;
+}
+.foodItem .foodPrice{
+    font-size: 25px;
+    font-weight: 400;
+}
