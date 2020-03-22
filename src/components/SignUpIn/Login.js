@@ -86,7 +86,7 @@ const Login = () => {
             }
             <div className="form" id="signUp" style={{ display: haveAccount ? "none" : "block" }} >
                 <form>
-                    <input className="input" type="name" name="name" onBlur={inputChange} placeholder="Name" />
+                    <input className="input" type="text" name="name" onBlur={inputChange} placeholder="Name" />
                     <input className="input" type="email" name="email" onBlur={inputChange} placeholder="Email" />
                     <input className="input" type="password" name="password" onBlur={inputChange} placeholder="Password" />
                     <input className="input" type="password" name="confirmPassword" onBlur={inputChange} placeholder="Confirm Password" />

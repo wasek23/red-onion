@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import foodsData from "../../foodsData";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import './FoodDetails.css';
 // import { useParams } from 'react-router-dom';
-import { getDatabaseCart, addToDatabaseCart } from '../../database/databaseManager';
+import { addToDatabaseCart } from '../../database/databaseManager';
 
 const ProductDetails = () => {
     const { foodKey } = useParams();
     const food = foodsData.find(prod => prod.key === foodKey);
 
     //increase decrease handle
-    let [count, setCount] = useState(1)
+    let [count, setCount] = useState(1);
     const increaseHandle = () => {
         setCount(count + 1)
     }

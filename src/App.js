@@ -15,6 +15,7 @@ import FoodDetails from './components/FoodCorner/FoodDetails';
 import Cart from './components/Cart/Cart';
 import Login from './components/SignUpIn/Login';
 import UrlError from './components/UrlError/UrlError';
+import CheckoutBtn from './components/FoodCorner/CheckoutBtn';
 
 function App() {
     return (
@@ -61,6 +62,18 @@ function App() {
                             <Route exact path="/dinner" component={Dinner} />
                         </Switch>
                     </div>
+
+                    <Switch>
+                        <Route exact path="/">
+                            <CheckoutBtn></CheckoutBtn>
+                        </Route>
+                        <Route exact path="/breakfast">
+                            <CheckoutBtn></CheckoutBtn>
+                        </Route>
+                        <Route exact path="/dinner">
+                            <CheckoutBtn></CheckoutBtn>
+                        </Route>
+                    </Switch>
                 </Router>
             </AuthContextProvider>
         </div>

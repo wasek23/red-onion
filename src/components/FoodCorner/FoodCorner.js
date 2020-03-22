@@ -18,8 +18,6 @@ const FoodCorner = () => {
                     </li>
                 </ul>
             </div>
-
-            <button className="btn btnMuted">Checkout your food</button>
         </div>
     );
 }

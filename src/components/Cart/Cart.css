@@ -1,0 +1,30 @@
+.cartPage{
+    background-color: #fff;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartPage form{
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.cartPage form .input{
+    background-color: #eee;
+}
+.cartPage form{
+    width: 450px;
+}
+
+.deliveryDetails{
+    width: 60%;
+    text-align: center;
+}
+
+.cartDetails{
+    width: 40%;
+}

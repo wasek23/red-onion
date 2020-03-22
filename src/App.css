@@ -78,6 +78,29 @@ img{
   margin: 0 10px;
 }
 
+/* Form */
+form{
+  width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+form input, form textarea{
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+form .input{
+  background-color: #fff;
+  border: none;
+}
+.formText{
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
 /* Url Error */
 .notFound{
   display: flex;
