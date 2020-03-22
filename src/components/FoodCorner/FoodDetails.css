@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+.foodDetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 30px auto;
+}
+
+/* Product Details content */
+.fDetailsContent {
+    width: 45%;
+}
+.category{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 56px;
+    font-family: 'Abel', sans-serif;
+}
+.foodLongDisc{
+    font-size: 18px;
+    font-family: 'Abel', sans-serif;
+}
+.priceContainer{
+    display: inline-flex;
+    margin-top: 20px;
+}
+.priceContainer span{
+    padding: 0 20px;
+}
+.foodPrice{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.incDec{
+    border: 1px solid #dddddd;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin-left: 17px;
+}
+.incDec button{
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+.plusIcon{
+    color:red
+}
+
+/* Product Details img */
+.detailImg{
+    width: 45%;
+}
+.detailImg img{
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+.loginPage{
+    background-image: url(../../img/bannerbackground.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.googleSign{
+    margin-bottom: 50px;
+}
+
+.form{
+    width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form input{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.form .input{
+    background-color: #fff;
+    border: none;
+}
+.form .formText{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}

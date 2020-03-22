@@ -2,9 +2,10 @@
     --colorPrimary: #f91944;
 }
 
-  .foodCorner{
+.foodCorner{
     background-color: #fff;
     padding: 60px 0;
+    text-align: center;
 }
 
 /* Food Menu */
@@ -18,29 +19,28 @@
     list-style-type: none;
     justify-content: center;
 }
-.foodMenu ul li{
-    padding: 10px 15px;
-}
 
-.foodMenu ul li a{
+.foodMenu ul a{
     color: #333;
     text-decoration: none;
     font-weight: 600;
     position: relative;
     transition: all .3s ease;
+    padding: 10px 15px;
+    cursor: pointer;
 }
-.foodMenu ul li a.active,
-.foodMenu ul li a:hover{
+.foodMenu ul a.active,
+.foodMenu ul a:hover{
     color: var(--colorPrimary);
 }
-.foodMenu ul li a.active::before,
-.foodMenu ul li a:hover::before{
+.foodMenu ul a.active::before,
+.foodMenu ul a:hover::before{
     content: "";
-    width: 80%;
+    width: 50%;
     height: 3px;
     position: absolute;
-    bottom: -5px;
-    left: 10%;
+    bottom: 0;
+    left: 25%;
     background-color: var(--colorPrimary);
 }
 
@@ -69,6 +69,8 @@
 .foodItem .foodTitle{
     font-size: 18px;
     margin: 15px 0;
+    text-decoration: none;
+    color: #333;
 }
 .foodItem .foodShortDisc{
     color: #555;

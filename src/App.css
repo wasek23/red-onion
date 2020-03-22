@@ -17,14 +17,27 @@ img{
 .btn{
   border: none;
   background-color: transparent;
-  padding: 12px 35px;
+  padding: 10px 30px;
   font-size: 18px;
   border-radius: 100px;
   cursor: pointer;
+  text-decoration: none;
+  color: #333;
 }
 .btnFull{
   color: #fff;
   background-color: var(--colorPrimary);
+}
+.btnMuted{
+  color: #fff;
+  background-color: #ddd;
+}
+
+.green{
+  color: green;
+}
+.red{
+  color: red;
 }
 
 /* Header */
@@ -51,4 +64,34 @@ img{
 }
 .headerNav > *{
   margin: 0 10px;
+}
+
+.userInfo{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.userInfo img{
+  width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Url Error */
+.notFound{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+}
+.notFound h1{
+  font-weight: 600;
+  font-size: 40px;
+}
+.notFound h2{
+  font-size: 60px;
+  font-weight: 100;
+  margin-bottom: 10px;
 }
