@@ -1,0 +1,42 @@
+.deliveryContainer{
+    padding: 50px;
+}
+
+.deliveryContainer h1{
+    padding-bottom: 20px;
+}
+
+.deleveryRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.deliveryCart{
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+
+.deliveryCart img{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.deleveryIcon img{
+    width: 175%;
+    height: 29%;
+}
+
+.deleveryContent, .deleveryIcon{
+    padding: 10px;
+}
+
+.deliveryCart:hover{
+    box-shadow: 0 5px 15px 3px #eee;
+}
+
+.deleveryCol{
+    display: flex;
+    justify-content: space-between;
+}

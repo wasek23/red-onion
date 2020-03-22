@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 import { getDatabaseCart } from '../../database/databaseManager';
 import foodsData from '../../foodsData';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     const foodItems = foodsData;
@@ -48,7 +49,9 @@ const Cart = () => {
                     <input className="input" type="text" name="flat" placeholder="Flat, suite or floor" />
                     <input className="input" type="text" name="business" placeholder="Business name" />
                     <textarea className="input" name="instructor" rows="5" placeholder="Add delivery instructor"></textarea>
-                    <input type="submit" value="Save & Continue" className="btn btnFull" />
+                    <Link to="/checkout">
+                        <input type="submit" value="Save & Continue" className="btn btnFull" />
+                    </Link>
                 </form>
             </div>
 

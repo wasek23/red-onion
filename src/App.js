@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { AuthContextProvider } from './components/SignUpIn/useAuth';
+import { AuthContextProvider, PrivateRoute } from './components/SignUpIn/useAuth';
 
 import Header from './components/Header/Header';
 import HomeHero from './components/HomeHero/HomeHero';
@@ -16,6 +16,8 @@ import Cart from './components/Cart/Cart';
 import Login from './components/SignUpIn/Login';
 import UrlError from './components/UrlError/UrlError';
 import CheckoutBtn from './components/FoodCorner/CheckoutBtn';
+import ChooseUs from './components/ChooseUs/ChooseUs';
+import Checkout from './components/Checkout/Checkout';
 
 function App() {
     return (
@@ -46,6 +48,10 @@ function App() {
                             <Cart></Cart>
                         </Route>
 
+                        <PrivateRoute path="/checkout">
+                            <Checkout></Checkout>
+                        </PrivateRoute>
+
                         <Route path="/food/:foodKey">
                             <FoodDetails></FoodDetails>
                         </Route>
@@ -66,12 +72,15 @@ function App() {
                     <Switch>
                         <Route exact path="/">
                             <CheckoutBtn></CheckoutBtn>
+                            <ChooseUs></ChooseUs>
                         </Route>
                         <Route exact path="/breakfast">
                             <CheckoutBtn></CheckoutBtn>
+                            <ChooseUs></ChooseUs>
                         </Route>
                         <Route exact path="/dinner">
                             <CheckoutBtn></CheckoutBtn>
+                            <ChooseUs></ChooseUs>
                         </Route>
                     </Switch>
                 </Router>

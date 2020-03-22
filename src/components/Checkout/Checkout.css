@@ -1,0 +1,81 @@
+.lacationContainer{
+    display: flex;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+.map{
+    width: 62%;
+}
+.map img{
+    border-radius: 15px;
+}
+
+.locationPart{
+    width: 20%;
+    padding: 25px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background: #f5f5f5;
+
+}
+.locationAddress{
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px 0px;    
+}
+.locationAddress h2{
+    font-weight: 500;
+    font-size: 20px;
+}
+.locationAddress p{
+   color: #d3cfcf;
+   font-size: 14px;
+}
+.location, .address{
+    position: relative;
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.location::before, .address::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #f91944;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.deleveryTime h1{
+    font-weight: 500;
+}
+
+.deliveryImg img{
+    width: 30%;
+}
+.deleveryRadier{
+   display: flex;
+   padding: 15px;
+   margin:20px 0;
+   border-radius: 10px;
+   background: #ffffff;
+}
+.raiderImg{
+    width: 25%;
+    margin-right: 15px;
+}
+.contactBtn{
+    border: none;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 9px 88px;
+    color: #ffffff;
+    margin-top: 10px;
+    background-color: #f91944;
+}
