@@ -24,7 +24,7 @@ const Cart = () => {
         });
 
         setCart(cartFoods);
-    }, []);
+    }, [foodItems]);
     console.log(cart);
 
     //increase decrease handle
