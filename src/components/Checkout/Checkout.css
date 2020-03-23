@@ -1,4 +1,4 @@
-.lacationContainer{
+.locationContainer{
     display: flex;
     max-width: 1140px;
     padding: 0 15px;
@@ -52,15 +52,16 @@
     top: 10px;
 }
 
-.deleveryTime h1{
+.deliveryTime h1{
     font-weight: 500;
 }
 
 .deliveryImg img{
     width: 30%;
 }
-.deleveryRadier{
+.deliveryRider{
    display: flex;
+   align-items: center;
    padding: 15px;
    margin:20px 0;
    border-radius: 10px;
@@ -69,13 +70,4 @@
 .raiderImg{
     width: 25%;
     margin-right: 15px;
-}
-.contactBtn{
-    border: none;
-    font-size: 15px;
-    border-radius: 4px;
-    padding: 9px 88px;
-    color: #ffffff;
-    margin-top: 10px;
-    background-color: #f91944;
 }

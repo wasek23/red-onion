@@ -1,18 +1,19 @@
 import React from 'react';
 import './Checkout.css';
-import deleveryMan from '../../img/Image/delevery-man.png';
-import map from '../../img/map.png';
+import DeliveryMan from '../../img/delivery-man.png';
+import Map from '../../img/map.png';
+import Rider from '../../img/rider.png'
 
 const Checkout = () => {
     return (
-        <div className="lacationContainer">
+        <div className="locationContainer">
             <div className="map">
-                <img src={map} alt="" />
+                <img src={Map} alt="" />
             </div>
 
             <div className="locationPart">
                 <div className="deliveryImg">
-                    <img src={deleveryMan} alt="" />
+                    <img src={DeliveryMan} alt="" />
                 </div>
                 <div className="locationAddress">
                     <div className="location">
@@ -21,18 +22,18 @@ const Checkout = () => {
                     </div>
                     <div className="address">
                         <h2>Shop Address</h2>
-                        <p>Gulshan Plaza Restaura GPR</p>
+                        <p>Gulshan Plaza Restaurant GPR</p>
                     </div>
                 </div>
 
-                <div className="deleveryTime">
+                <div className="deliveryTime">
                     <h1>09:30</h1>
-                    <p>Estimated dalivery time</p>
+                    <p>Estimated delivery time</p>
                 </div>
 
-                <div className="deleveryRadier">
+                <div className="deliveryRider">
                     <div className="raiderImg">
-                        <img src={map} alt="" />
+                        <img src={Rider} alt="" />
                     </div>
                     <div className="raiderContent">
                         <h2>Hamim</h2>
@@ -40,7 +41,7 @@ const Checkout = () => {
                     </div>
                 </div>
 
-                <button className="contactBtn">Contact</button>
+                <button className="btn btnFull" style={{ width: "100%" }}>Contact</button>
             </div>
         </div>
     );

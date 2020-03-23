@@ -1,5 +1,5 @@
 import React from 'react';
-import logo2 from './logo/logo2.png';
+import Logo from './logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Auth from '../SignUpIn/useAuth';
@@ -17,10 +17,10 @@ const Header = () => {
         <header className="header">
             <div className="headerContainer">
                 <a href="/" className="headerLogo">
-                    <img src={logo2} alt="" />
+                    <img src={Logo} alt="" />
                 </a>
                 <div className="headerNav">
-                    <FontAwesomeIcon icon={faShoppingCart} />
+                    <a href="/cart" className="cartIcon"><FontAwesomeIcon icon={faShoppingCart} /></a>
                     {
                         auth.user ? <span className="userInfo"><h3>{auth.user.name}</h3><img src={auth.user.photo} alt="User Pic" /><button onClick={signOutBtn} className="btn btnFull">Sign Out</button></span> : <a href="/login" className="btn btnFull">Sign Up</a>
                     }

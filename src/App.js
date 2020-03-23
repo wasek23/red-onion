@@ -5,6 +5,7 @@ import { AuthContextProvider, PrivateRoute } from './components/SignUpIn/useAuth
 
 import Header from './components/Header/Header';
 import HomeHero from './components/HomeHero/HomeHero';
+import Footer from './components/Footer/Footer';
 
 import FoodCorner from './components/FoodCorner/FoodCorner';
 import Lunch from './components/FoodCorner/Lunch';
@@ -61,7 +62,7 @@ function App() {
                         </Route>
                     </Switch>
 
-                    <div className="foodCorner">
+                    <div className="foodCorner" style={{ padding: 0 }}>
                         <Switch>
                             <Route exact path="/" component={Lunch} />
                             <Route exact path="/breakfast" component={Breakfast} />
@@ -84,6 +85,8 @@ function App() {
                         </Route>
                     </Switch>
                 </Router>
+
+                <Footer></Footer>
             </AuthContextProvider>
         </div>
     );

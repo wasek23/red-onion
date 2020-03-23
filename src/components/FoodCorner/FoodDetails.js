@@ -7,7 +7,7 @@ import './FoodDetails.css';
 // import { useParams } from 'react-router-dom';
 import { addToDatabaseCart } from '../../database/databaseManager';
 
-const ProductDetails = () => {
+const FoodDetails = () => {
     const { foodKey } = useParams();
     const food = foodsData.find(prod => prod.key === foodKey);
 
@@ -80,4 +80,4 @@ const ProductDetails = () => {
     );
 };
 
-export default ProductDetails;
+export default FoodDetails;
