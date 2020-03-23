@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footerFlex" style={{ marginBottom: "60px" }}>
                 <div className="footerLogo">
-                    <img src={Logo} alt="" />
+                    <a href="/"><img src={Logo} alt="" /></a>
                 </div>
 
                 <div className="footerTopRight">

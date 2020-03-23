@@ -100,6 +100,20 @@ img{
 header .cartIcon{
   color: black;
   font-size: 20px;
+  text-decoration: none;
+  position: relative;
+}
+header .cartCount{
+  position: absolute;
+  font-size: 12px;
+  background-color: var(--colorPrimary);
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  top: -8px;
+  right: -8px;
 }
 
 .userInfo{
