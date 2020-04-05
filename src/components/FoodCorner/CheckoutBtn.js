@@ -7,9 +7,9 @@ const CheckoutBtn = () => {
 
     return (
         <div className="foodCorner">
-            <Link to="/checkout">
+            <Link to="/cart">
                 {
-                    auth.user ? <button className="btn btnFull">Checkout your food</button> : <button className="btn btnMuted">Checkout your food</button>
+                    auth.user ? <button className="btn btnFull">Checkout your foods</button> : <button className="btn btnMuted">Checkout your foods</button>
                 }
             </Link>
         </div>

@@ -19,6 +19,7 @@ import UrlError from './components/UrlError/UrlError';
 import CheckoutBtn from './components/FoodCorner/CheckoutBtn';
 import ChooseUs from './components/ChooseUs/ChooseUs';
 import Checkout from './components/Checkout/Checkout';
+import Inventory from './components/Inventory/Inventory';
 
 function App() {
     return (
@@ -39,6 +40,10 @@ function App() {
                         <Route exact path="/dinner">
                             <HomeHero></HomeHero>
                             <FoodCorner></FoodCorner>
+                        </Route>
+
+                        <Route path="/inventory">
+                            <Inventory></Inventory>
                         </Route>
 
                         <Route path="/login">
